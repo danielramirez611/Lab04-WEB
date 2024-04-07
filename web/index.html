@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-<h2>Iniciar Sesión</h2>
-    <form action="/WebApplication1/ServletVerificar" method="post">
-        <label for="usuario">Usuario:</label>
-        <input type="text" id="usuario" name="xusu" required><br><br>
-        <label for="clave">Clave:</label>
-        <input type="password" id="clave" name="xpas" required><br><br>
-        <input type="submit" value="Iniciar Sesión">
-    </form>
-    </body>
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Incluir la CDN de Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5">Iniciar Sesión</h2>
+        <form action="/WebApplication1/ServletVerificar" method="post">
+            <div class="form-group">
+                <label for="usuario">Usuario:</label>
+                <input type="text" class="form-control" id="usuario" name="xusu" required>
+            </div>
+            <div class="form-group">
+                <label for="clave">Clave:</label>
+                <input type="password" class="form-control" id="clave" name="xpas" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        </form>
+    </div>
+</body>
 </html>
